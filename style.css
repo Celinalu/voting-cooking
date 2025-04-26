@@ -1,0 +1,139 @@
+/* Body */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f8d3e1; /* Light pink background */
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+}
+
+/* Heading */
+h1 {
+    color: #000000; /* Purple for the heading */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Add a smaller font size for the second line of text inside h1 */
+h1 span {
+    font-size: 20px; /* Smaller size for the second line */
+    display: block; /* Makes it appear as a second line */
+}
+
+/* Gallery */
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Picture container */
+.picture {
+    margin: 20px;
+    text-align: center;
+    position: relative;
+    border-radius: 20px; /* Rounded corners for picture container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for a cute, bubbly feel */
+}
+
+/* Image styling (smaller photo boxes) */
+.picture img {
+    width: 150px; /* Smaller width */
+    height: 150px; /* Smaller height */
+    object-fit: cover;
+    border: 4px solid #8a2be2; /* Purple border */
+    border-radius: 15px; /* Rounded corners for images */
+}
+
+/* Button styling */
+button {
+    margin-top: 10px;
+    padding: 12px 25px;
+    background-color: #ff69b4; /* Soft pink for buttons */
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px; /* Rounded and bubbly effect */
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3); /* Soft shadow to give a bubbly effect */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover and scale */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #ff1493; /* Brighter pink on hover */
+    transform: scale(1.1); /* Bubbly pop effect when hovered */
+}
+
+/* Stars container */
+.stars {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Star styling */
+.star {
+    font-size: 30px;
+    color: #ffcc00; /* Bright yellow stars */
+    cursor: pointer;
+    transition: color 0.3s; /* Smooth transition for color */
+}
+
+/* Hovered stars */
+.star:hover,
+.star.hovered {
+    color: gold; /* Gold on hover */
+}
+
+/* Selected stars */
+.star.selected {
+    color: gold; /* Gold color for selected stars */
+}
+
+/* Hover effect: When hovering, all stars before the hovered one also turn gold */
+.star:hover ~ .star {
+    color: gainsboro; /* Make sure only the hovered part stays gold */
+}
+
+/* Choose File Button styling */
+input[type="file"] {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #ff69b4; /* Soft pink background for a cute effect */
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px; /* Rounded and bubbly effect */
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3); /* Soft shadow to add a bubbly effect */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover and scale */
+    display: inline-block; /* Align the button properly */
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Button hover effect */
+input[type="file"]:hover {
+    background-color: #ff1493; /* Brighter pink on hover */
+    transform: scale(1.1); /* Bubbly pop effect when hovered */
+}
+
+/* Make the button's file input text more centered and easier to interact with */
+input[type="file"]::-webkit-file-upload-button {
+    padding: 10px 20px;
+    background-color: #ff69b4; /* Same soft pink color for consistency */
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px; /* Rounded corners for the file upload button */
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3); /* Soft shadow for bubbly feel */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover and scale */
+}
+
+/* File input button hover effect */
+input[type="file"]::-webkit-file-upload-button:hover {
+    background-color: #ff1493; /* Brighter pink on hover */
+    transform: scale(1.1); /* Bubbly pop effect when hovered */
+}
